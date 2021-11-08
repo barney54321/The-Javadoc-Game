@@ -6,22 +6,40 @@
     </head>
 
     <body>
-        <h1 id="real-title">The Javadoc Game</h1>
-
-        <div id="wrapper">
-
-            <strong>A dumb game made by Andrew Esteban.</strong> <br><br><br>
-            Start: <input id="start" type="text" value="java.util.ArrayList"/><br />
-            Goal: <input id="goal" type="text" value="java.lang.Number"/><br /><br />
-            <button id="play">Play</button>
-            <br>
-            <br>
-            <div id="score"></div>
-            <div id="pages"></div>
-            <br>
+        <div id="top-wrapper">
+            <h1 id="real-title">The Javadoc Game</h1>
+            <strong>A dumb game made by Andrew Esteban.</strong>
         </div>
 
-        <div id="box"></div>
+        <div id="wrapper">
+            <table id="input-table">
+                <tr>
+                    <td>Start:</td>
+                    <td>
+                        <input
+                            id="start"
+                            type="text"
+                            value="java.util.ArrayList"
+                        />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Goal:</td>
+                    <td>
+                        <input id="goal" type="text" value="java.lang.Number" />
+                    </td>
+                </tr>
+            </table>
+
+            <button id="play">Play</button>
+            <br />
+            <br />
+            <div id="score">Clicks: 0</div>
+            <div id="pages">Pages:</div>
+            <br />
+
+            <div id="box"></div>
+        </div>
 
         <script src="main.js"></script>
     </body>
